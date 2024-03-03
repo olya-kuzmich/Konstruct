@@ -116,6 +116,7 @@ span {
   flex-wrap: wrap;
   max-width: 460px;
   width: 100%;
+  gap: 20px;
 }
 .sec_1_text_second {
   color: #48555b;
@@ -202,6 +203,7 @@ article {
   gap: 18px;
   max-width: 290px;
   width: 100%;
+  margin: 0 auto;
 }
 article h3 {
   color: #48555b;
@@ -237,7 +239,7 @@ article p {
 .bg {
   background-image: url(bg.jpg);
   background-position: bottom;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 .bg1 {
   background-image: url(./mainpic.jpg);
