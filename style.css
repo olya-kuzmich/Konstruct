@@ -319,3 +319,8 @@ footer p {
 .scroll {
   transition: 0.4s;
 }
+@media (max-width:450px) {
+  .card_img{
+    margin-top: 20px;
+  }
+}
