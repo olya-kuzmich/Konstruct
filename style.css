@@ -239,11 +239,13 @@ article p {
 .bg {
   background-image: url(bg.jpg);
   background-position: bottom;
-  background-repeat: repeat;
+   background-size: cover;
+
 }
 .bg1 {
   background-image: url(./mainpic.jpg);
   background-position: center;
+   background-size: cover;
 }
 footer {
   background-color: #171819;
@@ -319,8 +321,8 @@ footer p {
 .scroll {
   transition: 0.4s;
 }
-@media (max-width:450px) {
-  .card_img{
+@media (max-width: 450px) {
+  .card_img {
     margin-top: 35px;
   }
 }
