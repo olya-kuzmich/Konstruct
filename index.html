@@ -3,162 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KONSTRUCT</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="fav.svg" type="image/x-icon" />
   </head>
   <body>
-    <div class="bg1">
-      <div class="top_section">
-        <div class="container">
-          <div class="top">
-            <img src="logo.svg" alt="логотип KONSTRUCT" />
-            <div>
-              <h1>PARTNER WITH KONSTRUCT</h1>
-              <p>An award-winning construction management firm</p>
-            </div>
-            <a class="scroll" href="#nav">SCROLL DOWN</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <header id="nav">
-      <div class="container">
-        <div class="hr">
-          <div class="all_nav">
-            <img src="logo2.svg" />
-            <nav class="nav">
-              <a href="#">HOME</a>
-              <a href="#">ABOUT</a>
-              <a href="#">SERVICES</a>
-              <a href="#">WORK</a>
-              <a href="#">CONTACT</a>
-            </nav>
-          </div>
-          <hr />
-        </div>
-      </div>
+    <header>
+      <form>
+        <input type="text" />
+      </form>
+      <button class="header__button">
+        <img src="./geo_icon.png" />Current Location
+      </button>
     </header>
     <main>
-      <div class="section_1">
-        <div class="container">
-          <h2>OUR STORY</h2>
-          <div class="line"><hr /></div>
-          <div class="sec_1_all">
-            <div class="sec_1_text">
-              <p class="sec_1_text_main">
-                Founded in 2011 by John Mathew <br />
-                Smith, <span>Konstruct</span> has become the number one
-                construction management
-              </p>
-              <p class="sec_1_text_second">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat.
-              </p>
-            </div>
-            <div class="sec_1_cards">
-              <div class="card_img">
-                <img src="img1.jpg" />
-                <p class="p_card">WE<br />PLAN</p>
-              </div>
-              <div class="card_img">
-                <img src="img2.jpg" />
-                <p class="p_card">WE<br />MANAGE</p>
-              </div>
-              <div class="card_img">
-                <img src="img3.jpg" max-height="224px"/>
-                <p class="p_card">WE<br />BUILD</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section_2">
-        <div class="container">
-          <div class="sec_2_top">
-            <div>
-              <h2>OUR CAPABILITIES</h2>
-              <div class="line_2"><hr /></div>
-            </div>
-            <div class="sec_2_top2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat.
-              </p>
-              <button class="button">ALL SERVICES</button>
-            </div>
-          </div>
-          <div class="sec_2_cards">
-            <article>
-              <img src="icon3.png" width="65px" height="75px" />
-              <h3>PROJECT AND CONSTRUCTION MANAGEMENT</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat.
-              </p>
-            </article>
-            <article>
-              <img src="icon1.png" width="65px" height="75px" />
-              <h3>STRUCTURE AUDIT AND MAINTENANCE</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat.
-              </p>
-            </article>
-            <article>
-              <img src="icon2.png" width="65px" height="75px" />
-              <h3>FACTORY CONSTRUCTION AND MODELING</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat.
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="bg">
-        <div class="section_3">
-          <div class="container">
-            <h2>Want to build<br />something amazing?</h2>
-            <button class="button">GET IN TOUCH</button>
-          </div>
-        </div>
-      </div>
+      <section class="top">
+        <div class="time"></div>
+        <div class="weather"></div>
+      </section>
+      <section class="bottom">
+        <div class="week"></div>
+        <div class="wind"></div>
+      </section>
     </main>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <p>Newsletter Signup</p>
-          <div class="input">
-            <input
-              class="email"
-              type="email"
-              placeholder="test@youremail.com"
-            />
-            <input class="button" type="submit" value="SIGNUP" />
-          </div>
-        </div>
-        <p class="last_p">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
-      </div>
-    </footer>
   </body>
 </html>
